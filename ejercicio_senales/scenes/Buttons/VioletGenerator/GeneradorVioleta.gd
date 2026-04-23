@@ -15,10 +15,11 @@ func _process(delta):
 
 func _on_button_down():
 	print("BOTON violeta")
+	Generador_bloque()
 	pass # Replace with function body.
 
 func Generador_bloque():
 	var BloqueVioleta = InstanciaVioleta.instantiate()
 	add_child(BloqueVioleta)
-	
+	print("Hola soy el violeta y me genere")
 	pass

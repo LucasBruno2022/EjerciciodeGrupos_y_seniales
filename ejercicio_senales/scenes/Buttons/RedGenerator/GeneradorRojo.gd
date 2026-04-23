@@ -14,9 +14,11 @@ func _process(delta):
 
 func _on_button_down():
 	print("BOTON Rojo")
+	Generador_bloque()
 	pass # Replace with function body.
 
 func Generador_bloque():
 	var BloqueRojo = InstanciaRojo.instantiate()
 	add_child(BloqueRojo)
+	print("Hola soy el rojo y me genere")
 	pass
