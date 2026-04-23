@@ -1,9 +1,8 @@
-extends RigidBody2D
+extends TextureButton
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	add_to_group("Bloques")
 	pass # Replace with function body.
 
 
@@ -11,6 +10,7 @@ func _ready():
 func _process(delta):
 	pass
 
-func delete():
-	print("Te borre")
-	queue_free()
+
+func _on_button_down():
+	get_tree().call_group("Bloques", "delete")
+	pass # Replace with function body.

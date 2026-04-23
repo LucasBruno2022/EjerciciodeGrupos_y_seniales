@@ -12,4 +12,5 @@ func _process(delta):
 	pass
 
 func delete():
+	print("Te borre")
 	queue_free()
