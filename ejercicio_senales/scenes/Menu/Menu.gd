@@ -11,6 +11,8 @@ func _ready():
 	$CountLabel.text = INSTANCES_TEXT + str(instancesCount)
 	GeneRojo = get_node("RedGenerator").button_down.connect(count_new_instance)
 	GeneVioleta = get_node("VioletGenerator").button_down.connect(count_new_instance)
+	
+	add_to_group("Bloques")
 	pass
 
 func count_new_instance():
